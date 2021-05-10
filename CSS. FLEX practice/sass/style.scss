@@ -1,0 +1,177 @@
+@import "reset.scss";
+
+body {
+    background: rgb(97,241,229);
+    background: linear-gradient(9deg, rgba(97,241,229,1) 20%, rgba(97,173,241,1) 36%, rgba(97,97,241,1) 63%, rgba(3,0,251,1) 81%, rgba(7,0,255,1) 100%);
+    color: white;
+}
+.container {
+    margin: 0px;
+    max-width: 1500px;
+}
+.hi {
+    padding: 5px 15px;
+	&__row {
+        display: flex;
+        flex-direction: space-between;
+        padding: 15px;
+        justify-content: space-between;
+    }
+	&__body {
+        color: white;
+    }
+	&__title {
+        letter-spacing: 5px;
+        font-size: 40px;
+        font-weight: 700;
+    }
+	&__text {
+        font-size: 20px;
+        font-weight: 400;
+        & li {
+            background:url("../img/icons/icon.png") 0px 2px no-repeat;
+            margin: 20px 0;
+            padding: 0 36px;
+        }
+    }
+    &__image {
+        align-items: center;    
+    }
+}
+.middle {
+    &__body {
+        margin: 15px auto;
+        display: flex;
+    }
+    &__image {
+    }
+    &__description {
+        & p {
+            font-size: 18px; 
+            margin: 0 100px 30px 100px;
+            line-height: 30px;
+            &:last-child{
+               margin-bottom: 0;
+           }
+        }
+    }
+    &__title {
+        color: rgb(130, 7, 155);
+        text-align: center;
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+}
+
+.layer {
+    margin-top: 100px;
+    &__title {
+        font-size: 28px;
+        text-align: center;
+        margin: 15px auto;
+        color: rgb(82, 78, 78);
+    }
+    &__body {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__titles{
+        color: rgb(80, 76, 76);
+        font-size: 20px;
+        margin-bottom: 15px;
+        text-align: start;
+    }
+    &__column {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 20px ;
+        flex: 0 1 50%;
+    }
+    &__image {
+        border: 2px solid rgb(101, 101, 248);
+        box-shadow: 0 0 10px 3px rgb(107, 107, 212);
+        &:hover {
+            box-shadow: 0 0 10px 10px blue;
+        }
+    }
+    &__description {
+        padding: 0 15px 15px 15px;
+    }
+    &__text {
+        overflow: hidden;
+    }
+}
+
+.columns {
+    margin-bottom: 40px;
+    & h1 {
+        text-align: center;
+        font-size: 28px;
+        color: rgb(80, 76, 76);
+        margin: 20px auto;
+    }
+    &__body {
+        display: flex;
+        justify-content: space-evenly;
+        overflow: hidden;
+    }
+    &__item {
+        position: relative;
+        border: 10px solid black;
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+}
+    &__title {
+        font-size: 25px;
+    }
+    &__text {
+        font-size: 20px;
+    }
+    &__button {
+        width: 100%;
+        background: rgb(0,250,255);
+        background: linear-gradient(90deg, rgba(0,250,255,1) 0%, rgba(56,151,175,1) 21%, rgba(96,146,198,1) 50%, rgba(50,0,255,1) 100%);
+        border: 2px solid black;
+        border-radius: 15px;
+        position: absolute;
+        bottom: 0;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+}
+}
+.item_1 {
+    background: url("../img/Безозjpg.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+.item_2 {
+    background:url("../img/биллjpg.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+.item_3 {
+    background:url("../img/стив.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+.footer {
+    display: block;
+    width: 100%;
+    background: rgb(0,135,248);
+    background: radial-gradient(circle, rgba(0,135,248,1) 0%, rgba(0,94,80,1) 49%);
+    text-align: center;
+    line-height: 10px;
+    color: white;
+    font-size: 20px;
+    line-height: 40px;
+    & a {
+        color: white;
+        font-size: 20px;
+        &:hover {
+            color: yellow;
+        }
+    }
+}
