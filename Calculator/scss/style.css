@@ -1,0 +1,212 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+.phone {
+  height: 335px;
+  width: 205px;
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  border: 3px solid black;
+  background-color: black;
+}
+
+.panel {
+  width: 90px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  height: 15px;
+  position: relative;
+  top: 0;
+  left: 30%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: white;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  grid-area: "dinamics" "camera";
+  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.panel .camera {
+  border-radius: 5px;
+  width: 8px;
+  height: 8px;
+  background-color: black;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.panel .dinamics {
+  width: 25px;
+  height: 8px;
+  background-color: black;
+}
+
+.area {
+  background-color: black;
+  margin: 15% auto;
+  width: 200px;
+  height: 300px;
+}
+
+.area__input {
+  overflow: hidden;
+  color: white;
+  text-align: end;
+  font-size: 35px;
+  padding-right: 5px;
+}
+
+.hublot {
+  position: relative;
+  padding: 10px 0 0 15px;
+  display: -ms-grid;
+  display: grid;
+  gap: 10px;
+  -ms-grid-columns: (minmax(35px, 1fr))[4];
+      grid-template-columns: repeat(4, minmax(35px, 1fr));
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 10px;
+}
+
+.hublot button[id="yellow"] {
+  background-color: #fd8312;
+  color: white;
+}
+
+.hublot button[id="yellow"]:active {
+  background-color: #f79d49;
+}
+
+.hublot button {
+  position: relative;
+  top: 0;
+  left: 0;
+  font-weight: 600;
+  width: 100%;
+  height: 35px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: 0 15px;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+}
+
+.hublot button[id="darkGray"] {
+  background-color: #323232;
+  color: white;
+}
+
+.hublot button[id="darkGray"]:active {
+  background-color: #585858;
+}
+
+.hublot button[id="gray_item"] {
+  background-color: #a5a5a5;
+  color: black;
+}
+
+.hublot button[id="gray_item"]:active {
+  background-color: #c0bfbf;
+}
+
+.hublot__item17 {
+  grid-column: span 2;
+  grid-row: span 2;
+  text-align: start;
+}
+
+.title {
+  text-align: center;
+  padding-right: 10px;
+}
+/*# sourceMappingURL=style.css.map */
